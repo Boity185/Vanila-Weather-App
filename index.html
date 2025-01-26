@@ -8,31 +8,48 @@
     <title>Vanila Weather App</title>
 </head>
 <body>
-    <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="search"/>
-        </form>
-    </header>
-    <main>
-        <div>
-    <h1>Pretoria</h1>
-    <p>Tuesday 14:49, scattered clouds
-        <br/>
-        Humidity: 66%, Wind: 3.13km/h
-    </p>
-    </div>
-    <div>
-    🌤️ 15°C
-   </div>
-    </main>
+    
+    <div class="weather-app">
+        <header>
+          <form class="search-form" id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              id="search-form-input"
+              class="search-form-input"
+            />
+            <input type="submit" value="Search" class="search-form-button" />
+          </form>
+        </header>
+        <main>
+          <div class="weather-app-data">
+            <div>
+              <h1 class="weather-app-city" id="city">Pretoria</h1>
+              <p class="weather-app-details">
+                Tuesday 14:49, scattered clouds
+                <br />
+                Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              </p>
+            </div>
+            <div class="weather-app-temperature-container">
+              <div class="weather-app-icon">🌤️</div>
+              <div class="weather-app-temperature">12</div>
+              <div class="weather-app-unit">°C</div>
+            </div>
+          </div>
+        </main>
+  
+    
     <footer>
+        
       this project was Coded by 
 
  <a href="https://github.com/Boity185/Boity185" target="_blank">Boitumelo Mielies</a>,code hosted on
  <a href="https://github.com/Boity185/Vanila-Weather-App"target="_blank" > Github</a>and website hosted  on
  <a href="https://weathervanila.netlify.app/"target="_blank" > Netlify</a>
     </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 </html>
